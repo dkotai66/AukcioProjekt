@@ -26,6 +26,10 @@ public class Festmeny {
         return this.festo;
     }
 
+    public String getStilus(){
+        return this.stilus;
+    }
+
     @Override
     public String toString() {
         return String.format("Cím: %s, Festő: %s, Stílus: %s", this.cim, this.festo, this.stilus);

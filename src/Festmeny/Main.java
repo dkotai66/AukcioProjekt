@@ -7,5 +7,7 @@ public class Main {
         System.out.println(f1);
 
         System.out.println(f1.getFesto());
+
+        System.out.println(f1.getStilus());
     }
 }
