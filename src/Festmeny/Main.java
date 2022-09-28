@@ -9,5 +9,12 @@ public class Main {
         System.out.println(f1.getFesto());
 
         System.out.println(f1.getStilus());
+
+        f1.licit();
+        System.out.println(f1);
+
+        f1.licit(50);
+        System.out.println(f1);
+
     }
 }

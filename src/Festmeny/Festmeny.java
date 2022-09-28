@@ -57,7 +57,7 @@ public class Festmeny {
                 this.legutolsoLicitIdeje=LocalDateTime.now();
             }
             else{
-                this.legmagasabbLicit=(this.legmagasabbLicit/100)*10;
+                this.legmagasabbLicit=(int) (this.legmagasabbLicit*1.1);
                 this.licitekSzama++;
                 this.legutolsoLicitIdeje=LocalDateTime.now();
             }
@@ -66,18 +66,29 @@ public class Festmeny {
     }
 
     public void licit(int mertek){
-        if (mertek<10||mertek>100){
-            System.out.println("Hiba!");
+        if (this.elkelt){
+            System.out.println("A festmény elkelt!");
         }
         else {
-            this.legmagasabbLicit=(this.legmagasabbLicit/100)*mertek;
-            this.licitekSzama++;
-            this.legutolsoLicitIdeje=LocalDateTime.now();
+            if (mertek<10 || mertek >100){
+                System.out.println("Hiba");
+            }
+            else{
+                this.legmagasabbLicit=(int)(this.legmagasabbLicit*(1+mertek*0.01));
+                this.licitekSzama++;
+                this.legutolsoLicitIdeje=LocalDateTime.now();
+            }
+
         }
     }
 
     @Override
     public String toString() {
-        return String.format("Cím: %s, Festő: %s, Stílus: %s", this.cim, this.festo, this.stilus);
+        if (this.elkelt){
+            return String.format("Cím: %s, Festő: %s, Stílus: %s, Elkelt, Legmagasabb licit: %d $ " + this.legutolsoLicitIdeje + "Összesen %d db" , this.cim, this.festo, this.stilus, this.legmagasabbLicit, this.licitekSzama);
+        }
+        else {
+            return String.format("Cím: %s, Festő: %s, Stílus: %s, Nem kelt el, Legmagasabb licit: %d $ " + this.legutolsoLicitIdeje + "Összesen %d db" , this.cim, this.festo, this.stilus, this.legmagasabbLicit, this.licitekSzama);
+        }
     }
 }

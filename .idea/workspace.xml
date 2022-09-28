@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c2c9d69-4c0a-48e5-8fe7-bc88af8ad9ca" name="Changes" comment="getStilus létrehozva">
+    <list default="true" id="3c2c9d69-4c0a-48e5-8fe7-bc88af8ad9ca" name="Changes" comment="licit resz kesz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Festmeny/Festmeny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Festmeny/Festmeny.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Festmeny/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Festmeny/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664354150915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="licit resz kesz">
+      <created>1664356076561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664356076561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +83,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Festmeny letrehozva, getFesto letrehozva" />
     <MESSAGE value="getStilus létrehozva" />
-    <option name="LAST_COMMIT_MESSAGE" value="getStilus létrehozva" />
+    <MESSAGE value="licit resz kesz" />
+    <option name="LAST_COMMIT_MESSAGE" value="licit resz kesz" />
   </component>
 </project>
